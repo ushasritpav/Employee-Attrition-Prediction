@@ -32,7 +32,7 @@ overtime_value = 1 if overtime == "Yes" else 0
 
 # Create empty dataframe with correct feature columns
 # Load original dataset to compute baseline values
-data = pd.read_csv("WA_Fn-UseC_-HR-Employee-Attrition.csv")
+data = pd.read_csv("data/WA_Fn-UseC_-HR-Employee-Attrition.csv")
 
 # Convert Attrition column to numeric (like training)
 data['Attrition'] = data['Attrition'].map({'Yes': 1, 'No': 0})
